@@ -9,11 +9,11 @@ print("Input a count of elements")
 nElems = int(input())
 iArray = array.array("i")
 nSum = 0
-for i in range(0, nElems - 1):
+for i in range(0, nElems):
     nItem = random.randint(1, 50)
     iArray.append(nItem)
 print("Generated Array:")
-for i in range(0, nElems - 1):
+for i in range(0, nElems):
     nSum += iArray[i]
     print(iArray[i], end=" ")
 print(f"\r\nThe Sum of {nElems} elements of the array is:{nSum}")
